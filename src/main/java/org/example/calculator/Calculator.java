@@ -4,15 +4,13 @@ public class Calculator {
     public int addArray(int[] arr) {
         int result = 0;
 
-        for(int input : arr) {
+        for (int input : arr) {
             result += input;
         }
 
         return result;
 
     }
-
-
         public float divideArray(float[] arr) {
             float result = 0;
             for(float input : arr) {
