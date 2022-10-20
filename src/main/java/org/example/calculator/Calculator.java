@@ -13,9 +13,9 @@ public class Calculator {
     }
 
 
-        public int divideArray(int[] arr) {
-            int result = 0;
-            for(int input : arr) {
+        public float divideArray(float[] arr) {
+            float result = 0;
+            for(float input : arr) {
                 result /= input;
             }
 
@@ -23,21 +23,21 @@ public class Calculator {
         }
 
     public int multiplyArray(int[] arr) {
-        int result = 0;
-        for(int input : arr) {
-            result *= input;
+        int result = arr[0];
+        for(int i = 1; i < arr.length; i++) {
+            result = result * arr[i];
         }
 
             return result;
         }
 
-        public int subtractArray(int[] arr) {
-            int result = arr[0];
-            for(int i = 1; i < arr.length; i++) {
-                result = result - arr[i];
-            }
+    public int subtractArray(int[] arr) {
+        int result = arr[0];
+        for(int i = 1; i < arr.length; i++) {
+            result = result - arr[i];
+        }
 
-            return result;
+        return result;
         }
     }
 

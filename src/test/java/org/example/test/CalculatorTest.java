@@ -17,7 +17,6 @@ public class CalculatorTest {
 
         Assertions.assertEquals(77, result);
     }
-
    @Test
    public void shouldReturnMultiplyValueOfNumbers() {
        int[] arr = {3, 45, 6, 7};
@@ -25,32 +24,26 @@ public class CalculatorTest {
        Calculator calculator = new Calculator();
        int result = calculator.multiplyArray(arr);
 
-        Assertions.assertEquals(0, result);
+        Assertions.assertEquals(5670, result);
     }
 
     @Test
     public void shouldReturnDivideValueOfNumbers() {
-        //Given
-        final int a = 64;
-        final int b = 8;
+        float[] arr = {64, 8, 13, 2};
 
-        //When
-        final int addResult = a / b;
+        Calculator calculator = new Calculator();
+        float result = calculator.divideArray(arr);
 
-        //Then
-        Assertions.assertEquals(8, addResult);
+        Assertions.assertEquals(0.0, result);
     }
 
     @Test
     public void shouldReturnSubtractValueOfNumbers() {
-        //Given
-        final int a = 100;
-        final int b = 100;
+        int[] arr = {64, 8, 13, 2};
 
-        //When
-        final int addResult = a - b;
+        Calculator calculator = new Calculator();
+        int result = calculator.subtractArray(arr);
 
-        //Then
-        Assertions.assertEquals(0, addResult);
+        Assertions.assertEquals(41.0, result);
     }
 }
