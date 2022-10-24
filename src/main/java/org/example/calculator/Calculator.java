@@ -1,10 +1,10 @@
 package org.example.calculator;
 
 public class Calculator {
-    public int addArray(int[] arr) {
-        int result = 0;
+    public float addArray(float[] arr) {
+        float result = 0;
 
-        for (int input : arr) {
+        for (float input : arr) {
             result += input;
         }
 
