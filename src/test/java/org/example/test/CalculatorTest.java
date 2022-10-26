@@ -24,9 +24,9 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnSumWhenAddArrayIsCalled() {
-        float[] array = {3, 45, 6, 7, 12, 4};
+        int[] array = {3, 45, 6, 7, 12, 4};
 
-        float result = calculator.addArray(array);
+        int result = calculator.addArray(array);
 
         Assertions.assertEquals(77, result);
     }
@@ -41,7 +41,7 @@ public class CalculatorTest {
 
     @Test
     public void shouldReturnDivideValueOfNumbers() {
-        float[] arr = {64, 8, 13, 2f};
+        float[] arr = {64, 8, 13, 2.0f};
 
         float result = calculator.divideArray(arr);
 

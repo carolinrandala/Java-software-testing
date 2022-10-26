@@ -1,10 +1,12 @@
 package org.example.calculator;
 
-public class Calculator {
-    public float addArray(float[] arr) {
-        float result = 0;
+import java.util.List;
 
-        for (float input : arr) {
+public class Calculator {
+    public int addArray(int[] arr) {
+        int result = 0;
+
+        for (int input : arr) {
             result += input;
         }
 
@@ -23,7 +25,7 @@ public class Calculator {
     public int multiplyArray(int[] arr) {
         int result = arr[0];
         for(int i = 1; i < arr.length; i++) {
-            result = result * arr[i];
+            result *= arr[0];
         }
 
             return result;
@@ -37,6 +39,7 @@ public class Calculator {
 
         return result;
         }
-    }
+
+}
 
 
